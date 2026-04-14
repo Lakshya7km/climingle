@@ -3,9 +3,12 @@
 **Anonymous, interest-based CLI chat for developers.**  
 *Match with strangers over shared interests, entirely from your terminal.*
 
-![CliMingle Preview](https://avatars.githubusercontent.com/u/180313971?s=400&u=56ea64c7dd5cfb2698ae6c9d204dfee4fe77f0cf&v=4)) *
+<p align="center">
+  <img src="https://avatars.githubusercontent.com/u/180313971?s=400&u=56ea64c7dd5cfb2698ae6c9d204dfee4fe77f0cf&v=4" width="200" style="border-radius: 50%" />
+</p>
 
 ---
+
 
 ## ✨ Features
 
