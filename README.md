@@ -3,7 +3,7 @@
 **Anonymous, interest-based CLI chat for developers.**  
 *Match with strangers over shared interests, entirely from your terminal.*
 
-![CliMingle Preview](https://github.com/Lakshya7km/climingle/raw/main/preview.png) *(Placeholder for your preview image)*
+![CliMingle Preview]([https://github.com/Lakshya7km/climingle/raw/main/preview.png](https://avatars.githubusercontent.com/u/180313971?s=400&u=56ea64c7dd5cfb2698ae6c9d204dfee4fe77f0cf&v=4)) *
 
 ---
 
