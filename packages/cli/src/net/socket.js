@@ -126,4 +126,3 @@ class SocketClient extends EventEmitter {
 }
 
 export default new SocketClient();
- pocket-logic

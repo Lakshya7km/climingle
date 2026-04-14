@@ -266,7 +266,6 @@ var SocketClient = class extends EventEmitter {
   }
 };
 var socket_default = new SocketClient();
-pocket - logic;
 
 // src/ui/Searching.js
 import { jsx as jsx3, jsxs as jsxs3 } from "react/jsx-runtime";
