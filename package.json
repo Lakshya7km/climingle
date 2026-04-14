@@ -1,0 +1,15 @@
+{
+  "name": "climingle-monorepo",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Anonymous CLI chat for devs — like Omegle but for the terminal",
+  "workspaces": [
+    "packages/relay",
+    "packages/cli"
+  ],
+  "scripts": {
+    "relay": "npm run dev --workspace=packages/relay",
+    "cli": "npm start --workspace=packages/cli",
+    "install:all": "npm install"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "name": "climingle",
+  "version": "1.0.0",
+  "description": "Anonymous CLI chat for devs — npx climingle",
+  "type": "module",
+  "bin": {
+    "climingle": "./dist/main.js"
+  },
+  "scripts": {
+    "build": "node build.mjs",
+    "start": "node build.mjs && node dist/main.js",
+    "dev": "node build.mjs && node dist/main.js"
+  },
+  "dependencies": {
+    "chalk": "^5.3.0",
+    "dotenv": "^16.4.1",
+    "ink": "^4.4.1",
+    "ink-spinner": "^5.0.0",
+    "ink-text-input": "^5.0.1",
+    "react": "^18.2.0",
+    "ws": "^8.16.0"
+  },
+  "devDependencies": {
+    "esbuild": "^0.20.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "keywords": ["cli", "chat", "anonymous", "developer", "terminal", "omegle"],
+  "license": "MIT"
+}
+
