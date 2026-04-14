@@ -166,7 +166,7 @@ import { Box as Box3, Text as Text3, useInput as useInput3 } from "ink";
 // src/net/socket.js
 import WebSocket from "ws";
 import { EventEmitter } from "events";
-var RELAY_URL = process.env.RELAY_URL || "ws://localhost:3001";
+var RELAY_URL = process.env.RELAY_URL || "wss://climingle.onrender.com";
 var SocketClient = class extends EventEmitter {
   constructor() {
     super();

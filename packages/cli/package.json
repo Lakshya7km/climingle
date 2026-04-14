@@ -1,7 +1,13 @@
 {
   "name": "climingle",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Anonymous CLI chat for devs — npx climingle",
+  "author": "lakshya mandavi <lakshyakumar7cr@gmail.com>",
+  "homepage": "https://github.com/Lakshya7km/climingle",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Lakshya7km/climingle.git"
+  },
   "type": "module",
   "bin": {
     "climingle": "./dist/main.js"
@@ -26,7 +32,16 @@
   "engines": {
     "node": ">=18.0.0"
   },
-  "keywords": ["cli", "chat", "anonymous", "developer", "terminal", "omegle"],
+  "keywords": [
+    "cli",
+    "chat",
+    "anonymous",
+    "developer",
+    "terminal",
+    "omegle",
+    "ink",
+    "react-cli"
+  ],
   "license": "MIT"
 }
 

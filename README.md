@@ -1,73 +1,65 @@
-# CliMingle 🖥️
+# 📡 CliMingle
 
-> **Anonymous CLI chat for devs. Like Omegle — but in your terminal.**
+**Anonymous, interest-based CLI chat for developers.**  
+*Match with strangers over shared interests, entirely from your terminal.*
+
+![CliMingle Preview](https://github.com/Lakshya7km/climingle/raw/main/preview.png) *(Placeholder for your preview image)*
+
+---
+
+## ✨ Features
+
+- **Terminal-Native**: Built with **React Ink**, it feels like a modern CLI tool but behaves like a real-time chat app.
+- **Smart Matchmaking**: A FIFO queue system that scores and pairs users based on **interest overlap** and **subnet proximity**.
+- **Privacy First**: No PII (Personally Identifiable Information) is stored. Analytics use 2-octet IP hashing to keep your identity safe.
+- **Moderation Ready**: Integrated with **Supabase** for IP-based reports and automated bans for bad actors.
+- **Zero Configuration**: Just run `npx climingle` and start chatting. No setup required.
+
+---
+
+## 🛠️ Architecture
+
+CliMingle consists of two main components:
+1.  **Relay Server**: A stateless Node.js/Express backend that handles WebSocket connections, matchmaking scores, and Supabase integration for moderation.
+2.  **CLI Client**: A React-based terminal UI that interacts with the relay server via secure WebSockets.
+
+---
+
+## 🚀 Quick Start
+
+No installation needed. Just run:
 
 ```bash
 npx climingle
 ```
 
-No accounts. No logs. Messages vanish when you disconnect.
+### Keyboard Shortcuts
+- **`N`**: Skip current partner & find next.
+- **`R`**: Report partner & find next.
+- **`Q`**: Quit CliMingle.
+- **`ESC`**: Clear your message input.
 
 ---
 
-## Features
-- 🎯 **Interest-based matching** — JavaScript, LeetCode, Rust, System Design, night-grind + more
-- 🌐 **Global matching** with subnet proximity bonus (same ISP = faster match)
-- 🎲 **Random dev names** — GhostCoder42, NullWizard7, you get the idea  
-- 🛡️ **ANSI injection protection** — no terminal hijacking
-- ⚡ **Rate limiting** — flood prevention built in
-- 🚫 **IP ban system** — `/report` → 3 reports/24h = 48h ban, 5 lifetime = permanent
-- 💾 **Stateless server** — zero message storage, Supabase only stores ban records
+## 👨‍💻 Behind the Project
 
-## Commands (in chat)
+This project was built as a journey into **Real-Time Backend Engineering**.
 
-| Command | Action |
-|---|---|
-| `/next` | Skip stranger, find next |
-| `/report` | Report + skip (triggers ban system) |
-| `/quit` | Exit CliMingle |
+### The Learning Journey
+Hi, I'm **lakshya mandavi** ([@Lakshya7km](https://github.com/Lakshya7km)). I built CliMingle because I am deeply passionate about building networking tools that connect people. 
 
-## Local Development
+To be completely honest: I am still in the **learning phase of Node.js and Backend Development**. Building a real-time matchmaking system with WebSockets and Supabase presented many challenges, and this project was a major step in my growth as a developer.
 
-### 1. Clone & install
-```bash
-git clone https://github.com/yourname/climingle
-cd climingle
-npm install
-```
+### Human-AI Collaboration 🤖
+CliMingle is a product of **Human-AI Pair Programming**. 
+- **My Role**: I served as the **System Architect and Designer**. I guided the logic, designed the features, and oversaw the entire system flow.
+- **AI Support**: I used **Antigravity (Google DeepMind)** to help translate my designs into implementation, debugging tricky WebSocket race conditions, and refining the React CLI components.
 
-### 2. Set up Supabase
-1. Go to [supabase.com](https://supabase.com) → New Project
-2. Run `supabase/schema.sql` in the SQL Editor
-3. Copy `.env.example` → `.env` in `packages/relay/`
-4. Fill in `SUPABASE_URL` and `SUPABASE_SERVICE_KEY`
+This project shows what is possible when a passionate learner uses modern AI tools to build complex systems.
 
-### 3. Start the relay server
-```bash
-cd packages/relay
-npm run dev
-# Relay running on ws://localhost:3001
-```
+---
 
-### 4. Start the CLI (in another terminal)
-```bash
-cd packages/cli
-npm start
-```
+## ⚖️ License & Copyright
 
-### 5. Test with two terminals
-Open two terminals. Run `npm start` in each. They should match!
-
-## Stack
-
-| Layer | Tech |
-|---|---|
-| CLI UI | Node.js + Ink (React for terminals) |
-| CLI transport | ws (WebSocket) |
-| Relay server | Express + ws |
-| Matchmaking | In-memory FIFO queue + score function |
-| Persistence | Supabase (PostgreSQL) |
-| Distribution | npm / npx |
-
-## License
-MIT
+Copyright (c) 2026 **lakshya mandavi**.  
+Distributed under the **MIT License**. See `LICENSE` for more information.

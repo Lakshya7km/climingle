@@ -7,8 +7,9 @@
 import WebSocket from 'ws';
 import { EventEmitter } from 'events';
 
-// Default to localhost for local development.
-const RELAY_URL = process.env.RELAY_URL || 'ws://localhost:3001';
+// Default to production relay for public use.
+// Users can still override via environment variable for local testing.
+const RELAY_URL = process.env.RELAY_URL || 'wss://climingle.onrender.com';
 
 class SocketClient extends EventEmitter {
   constructor() {
