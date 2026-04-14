@@ -1,6 +1,6 @@
 {
   "name": "climingle",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "description": "Anonymous CLI chat for devs — npx climingle",
   "author": "lakshya mandavi <lakshyakumar7cr@gmail.com>",
   "homepage": "https://github.com/Lakshya7km/climingle",
@@ -44,4 +44,3 @@
   ],
   "license": "MIT"
 }
-
